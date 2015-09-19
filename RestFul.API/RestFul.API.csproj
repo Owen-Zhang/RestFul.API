@@ -44,7 +44,10 @@
   <ItemGroup>
     <Compile Include="Attribute\Test1.cs" />
     <Compile Include="Configuration\Test2.cs" />
-    <Compile Include="HttpHandlers\Class1.cs" />
+    <Compile Include="HttpHandlers\404Handler.cs" />
+    <Compile Include="HttpHandlers\ForbiddenHttpHandler.cs" />
+    <Compile Include="HttpHandlers\RestHandler.cs" />
+    <Compile Include="HttpHandlers\StaticFileHandler.cs" />
     <Compile Include="Interface\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
