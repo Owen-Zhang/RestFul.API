@@ -35,6 +35,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,11 +44,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attribute\Test1.cs" />
-    <Compile Include="Configuration\Test2.cs" />
+    <Compile Include="Configuration\RestConfig.cs" />
+    <Compile Include="Extensions\AspNetRequest.cs" />
+    <Compile Include="Extensions\AspNetResponse.cs" />
+    <Compile Include="Extensions\HttpRequestExtensions.cs" />
     <Compile Include="HttpHandlers\404Handler.cs" />
     <Compile Include="HttpHandlers\ForbiddenHttpHandler.cs" />
+    <Compile Include="HttpHandlers\HttpHandlerBase.cs" />
+    <Compile Include="HttpHandlers\HttpHandlerFactory.cs" />
     <Compile Include="HttpHandlers\RestHandler.cs" />
     <Compile Include="HttpHandlers\StaticFileHandler.cs" />
+    <Compile Include="Http\ContentType.cs" />
+    <Compile Include="Http\HttpHeaders.cs" />
+    <Compile Include="Http\MimeTypes.cs" />
     <Compile Include="Interface\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
