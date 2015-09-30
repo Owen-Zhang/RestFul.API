@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AttributeManager\Test1.cs" />
+    <Compile Include="AttributeManager\RouteAttribute.cs" />
     <Compile Include="Common\AssignmentDefinition.cs" />
     <Compile Include="Common\PropertyInvoker.cs" />
     <Compile Include="Common\ReflectionUtils.cs" />
@@ -54,6 +54,7 @@
     <Compile Include="Extensions\AspNetResponse.cs" />
     <Compile Include="Extensions\HttpRequestExtensions.cs" />
     <Compile Include="Host\RestPath.cs" />
+    <Compile Include="Host\ServiceStackHost.cs" />
     <Compile Include="HttpHandlers\404Handler.cs" />
     <Compile Include="HttpHandlers\ForbiddenHttpHandler.cs" />
     <Compile Include="HttpHandlers\HttpHandlerBase.cs" />
@@ -64,6 +65,8 @@
     <Compile Include="Http\HttpHeaders.cs" />
     <Compile Include="Http\MimeTypes.cs" />
     <Compile Include="Interface\Class1.cs" />
+    <Compile Include="Interface\IRestGetWay.cs" />
+    <Compile Include="Interface\IReturn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
