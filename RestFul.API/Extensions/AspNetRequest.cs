@@ -364,5 +364,30 @@ namespace RestFul.API.Extensions
         {
             return request.ContentType.StartsWith(contentType, StringComparison.InvariantCultureIgnoreCase);
         }
+
+        public Dictionary<string, string> GetRequestParams()
+        {
+            var paramsDic = new Dictionary<string, string>();
+
+            //从URL中找参数
+            foreach (var name in request.QueryString.AllKeys)
+            {
+                if (name == null) continue;
+                paramsDic[name] = request.QueryString[name];
+            }
+
+            //从post和put中取值
+            if ((httpMethod == HttpMethods.Post || httpMethod == HttpMethods.Put) &&
+                FormData != null
+                )
+            {
+                foreach (var name in FormData.AllKeys)
+                {
+                    if (null == name) continue;
+                    paramsDic[name] = FormData[name];
+                }
+            }
+            return paramsDic;
+        }
     }
 }

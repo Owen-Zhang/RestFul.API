@@ -63,6 +63,7 @@
     <Compile Include="HttpHandlers\StaticFileHandler.cs" />
     <Compile Include="Http\ContentType.cs" />
     <Compile Include="Http\HttpHeaders.cs" />
+    <Compile Include="Http\HttpMethods.cs" />
     <Compile Include="Http\MimeTypes.cs" />
     <Compile Include="Interface\Class1.cs" />
     <Compile Include="Interface\IRestGetWay.cs" />
