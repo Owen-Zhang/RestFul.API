@@ -389,5 +389,21 @@ namespace RestFul.API.Extensions
             }
             return paramsDic;
         }
+
+        public bool IsChunked
+        {
+            get
+            {
+                var encoding = request.Headers[HttpHeaders.TransferEncoding];
+                if (!string.IsNullOrEmpty(encoding) && encoding.ToLower().Trim() == "chunked")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
     }
 }

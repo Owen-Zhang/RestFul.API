@@ -48,6 +48,7 @@
     <Compile Include="Common\AssignmentDefinition.cs" />
     <Compile Include="Common\PropertyInvoker.cs" />
     <Compile Include="Common\ReflectionUtils.cs" />
+    <Compile Include="Common\SerializeManager.cs" />
     <Compile Include="Common\StringMapTypeDeserializer.cs" />
     <Compile Include="Configuration\RestConfig.cs" />
     <Compile Include="Extensions\AspNetRequest.cs" />
@@ -65,7 +66,6 @@
     <Compile Include="Http\HttpHeaders.cs" />
     <Compile Include="Http\HttpMethods.cs" />
     <Compile Include="Http\MimeTypes.cs" />
-    <Compile Include="Interface\Class1.cs" />
     <Compile Include="Interface\IRestGetWay.cs" />
     <Compile Include="Interface\IReturn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
