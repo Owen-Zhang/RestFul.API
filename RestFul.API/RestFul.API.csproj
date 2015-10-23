@@ -54,7 +54,9 @@
     <Compile Include="Extensions\AspNetRequest.cs" />
     <Compile Include="Extensions\AspNetResponse.cs" />
     <Compile Include="Extensions\HttpRequestExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
     <Compile Include="Host\RestPath.cs" />
+    <Compile Include="Host\Runtime.Filters.cs" />
     <Compile Include="Host\ServiceStackHost.cs" />
     <Compile Include="HttpHandlers\404Handler.cs" />
     <Compile Include="HttpHandlers\ForbiddenHttpHandler.cs" />

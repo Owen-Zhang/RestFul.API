@@ -30,9 +30,8 @@ namespace RestFul.API.HttpHandlers
 
             try {
                 var request = GetRequest(httpReq, RestPath);
-
                 /*处理访问前的用户设置*/
-
+                
                 /*调用方法，处理返回*/
 
                 /*处理理用户的用户设置*/
