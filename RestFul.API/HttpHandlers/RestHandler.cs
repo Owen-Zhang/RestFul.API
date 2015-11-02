@@ -31,11 +31,11 @@ namespace RestFul.API.HttpHandlers
             try {
                 var request = GetRequest(httpReq, RestPath);
                 /*处理访问前的用户设置*/
-                
+                ConfigManager.Instance.FilterManager.ApplyRequestFilters(httpReq, httpRes, request);
                 /*调用方法，处理返回*/
-
+                var response = GetResponse(httpReq, httpRes, request);
                 /*处理理用户的用户设置*/
-
+                ConfigManager.Instance.FilterManager.ApplyResponseFilters(httpReq, httpRes, response);
                 /*将信息发回给调用者*/
             }
             catch(Exception e){
@@ -69,6 +69,11 @@ namespace RestFul.API.HttpHandlers
                 throw new Exception("");
             }
             return null;
+        }
+
+        private object GetResponse(AspNetRequest httpReq, AspNetResponse httpRes, object request)
+        {
+            return null;   
         }
     }
 }

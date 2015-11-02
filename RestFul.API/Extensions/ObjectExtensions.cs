@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace RestFul.API.Extensions
 {
     public static class ObjectExtensions
