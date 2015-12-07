@@ -74,6 +74,7 @@
     <Compile Include="Http\MimeTypes.cs" />
     <Compile Include="Interface\IRestGetWay.cs" />
     <Compile Include="Interface\IReturn.cs" />
+    <Compile Include="Interface\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
