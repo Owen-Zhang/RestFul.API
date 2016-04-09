@@ -62,7 +62,13 @@ namespace RestFul.API.Host
             if (!RequestServiceMap.ContainsKey(requestType))
                 RequestServiceMap.Add(requestType, serviceType);
 
+            var typeFactoryFunction = CallServiceExecute(requestType, serviceType);
 
+        }
+
+        private CallServiceExecute(Type requestType, Type serviceType)
+        {
+            
         }
 
         /// <summary>
